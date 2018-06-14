@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+ <servlet>
+        <servlet-name>LoginController</servlet-name>
+        <servlet-class>com.lbs.controllers.LoginController</servlet-class>
+    </servlet>    
+    <servlet-mapping>
+        <servlet-name>LoginController</servlet-name>
+        <url-pattern>/login</url-pattern>
+        </servlet-mapping>
+  <servlet>
+        <servlet-name>LoginService</servlet-name>
+        <servlet-class>com.lbs.controllers.LoginService</servlet-class>
+    </servlet>    
+    <servlet-mapping>
+        <servlet-name>LoginService</servlet-name>
+        <url-pattern>/service</url-pattern>
+        </servlet-mapping>   
+  
+  
+    <servlet>
+        <servlet-name>RegistrationController</servlet-name>
+        <servlet-class>com.lbs.controllers.RegistrationController</servlet-class>
+    </servlet>    
+    <servlet-mapping>
+        <servlet-name>RegistrationController</servlet-name>
+        <url-pattern>/register</url-pattern>
+        </servlet-mapping>   
+  
+  
+  <servlet>
+        <servlet-name>LabRequestController</servlet-name>
+        <servlet-class>com.lbs.controllers.LabRequestController</servlet-class>
+    </servlet>    
+    <servlet-mapping>
+        <servlet-name>LabRequestController</servlet-name>
+        <url-pattern>/operations</url-pattern>
+        </servlet-mapping>   
+  
+  <servlet>
+        <servlet-name>LabAllocationController</servlet-name>
+        <servlet-class>com.lbs.controllers.LabAllocationController</servlet-class>
+    </servlet>    
+    <servlet-mapping>
+        <servlet-name>LabAllocationController</servlet-name>
+        <url-pattern>/allocation</url-pattern>
+        </servlet-mapping>   
+  
+  
+  <servlet>
+        <servlet-name>AddNewLabController</servlet-name>
+        <servlet-class>com.lbs.controllers.AddNewLabController</servlet-class>
+    </servlet>    
+    <servlet-mapping>
+        <servlet-name>AddNewLabController</servlet-name>
+        <url-pattern>/admin</url-pattern>
+        </servlet-mapping>   
+  
+  <servlet>
+        <servlet-name>DeactivateLabController</servlet-name>
+        <servlet-class>com.lbs.controllers.DeactivateLabController</servlet-class>
+    </servlet>    
+    <servlet-mapping>
+        <servlet-name>DeactivateLabController</servlet-name>
+        <url-pattern>/admin1</url-pattern>
+        </servlet-mapping>   
+  
+     <servlet>
+        <servlet-name>GetAllLabDetailsController</servlet-name>
+        <servlet-class>com.lbs.controllers.GetAllLabDetailsController</servlet-class>
+    </servlet>    
+    <servlet-mapping>
+        <servlet-name>GetAllLabDetailsController</servlet-name>
+        <url-pattern>/details</url-pattern>
+        </servlet-mapping> 
+         <servlet>
+        <servlet-name>GetAllOTMLabDetailsController</servlet-name>
+        <servlet-class>com.lbs.controllers.GetAllOTMLabDetailsController</servlet-class>
+    </servlet>    
+    <servlet-mapping>
+        <servlet-name>GetAllOTMLabDetailsController</servlet-name>
+        <url-pattern>/xdetails</url-pattern>
+        </servlet-mapping> 
+        
+         <servlet>
+        <servlet-name>GetAllApprovalDetailsController</servlet-name>
+        <servlet-class>com.lbs.controllers.GetAllApprovalDetailsController</servlet-class>
+    </servlet>    
+    <servlet-mapping>
+        <servlet-name>GetAllApprovalDetailsController</servlet-name>
+        <url-pattern>/Approval</url-pattern>
+        </servlet-mapping> 
+        
+        
+        <servlet>
+        <servlet-name>GetAllOTMApprovalDetailsController</servlet-name>
+        <servlet-class>com.lbs.controllers.GetAllOTMApprovalDetailsController</servlet-class>
+    </servlet>    
+    <servlet-mapping>
+        <servlet-name>GetAllOTMApprovalDetailsController</servlet-name>
+        <url-pattern>/xApproval</url-pattern>
+        </servlet-mapping> 
+        
+        
+        <servlet>
+        <servlet-name>GetAllLabRequestDetailsController</servlet-name>
+        <servlet-class>com.lbs.controllers.GetAllLabRequestDetailsController</servlet-class>
+    </servlet>    
+    <servlet-mapping>
+        <servlet-name>GetAllLabRequestDetailsController</servlet-name>
+        <url-pattern>/requestdetails</url-pattern>
+        </servlet-mapping> 
+        
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+          <welcome-file>index.jsp</welcome-file>
+        <welcome-file>newjsp.jsp</welcome-file>
+      
+    </welcome-file-list>
+    
+  
+  
+  
+</web-app>
